@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "rust-lang.rust-analyzer",
+        "fill-labs.dependi",
+        "tamasfe.even-better-toml",
+        "vscode-icons-team.vscode-icons",
+        "probe-rs.probe-rs-debugger",
+        "zixuanwang.linkerscript",
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "probe-rs",
+            "type": "probe-rs-debug",
+            "request": "launch",
+            "flashingConfig": {
+                "flashingEnabled": true,
+                "verifyBeforeFlashing": true,
+                "verifyAfterFlashing": true,
+            },
+            "preLaunchTask": "build",
+            "chip": "STM32F103C8",
+            "coreConfigs": [
+                {
+                    "svdFile": "../STM32F103.svd",
+                    "programBinary": "target/thumbv7m-none-eabi/debug/blinky"
+                }
+            ]
+        },
+    ]
+}

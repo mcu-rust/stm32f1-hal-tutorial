@@ -1,0 +1,20 @@
+[package]
+    name = "blinky"
+    version = "0.1.0"
+
+    edition = "2024"
+
+
+[dependencies]
+    heap1 = "1"
+    stm32f1-hal = { version = "0.14", features = [
+        "f103",
+        "x8",
+        "critical-section-single-core",
+    ] }
+
+[profile.dev]
+    codegen-units = 1
+    debug = 2
+    opt-level = 0
+    panic = "abort"
